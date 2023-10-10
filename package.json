@@ -1,0 +1,25 @@
+{
+  "name": "@ibgrav/chew",
+  "version": "0.0.0",
+  "license": "UNLICENSED",
+  "type": "module",
+  "main": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js"
+    }
+  },
+  "scripts": {
+    "test": "vitest",
+    "build": "vite build && tsc -p tsconfig.build.json"
+  },
+  "devDependencies": {
+    "@types/node": "20.8.4",
+    "typescript": "5.2.2",
+    "vite": "4.4.11",
+    "vitest": "0.34.6"
+  }
+}
